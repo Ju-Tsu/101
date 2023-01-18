@@ -3,7 +3,7 @@ main {
 }
 
 .background {
-    background: url(../images/plans-background.jpg);
+    background: url("../images/plans-background.jpg");
     width: 100%;
     height: 100%;
     position: fixed;
@@ -13,15 +13,16 @@ main {
 .package {
     width: 80%;
     margin: 16px 0;
-    border: 4px solid #F5DF4D;
+    border: 4px solid #0e4f1f;
     border-left: none;
     position: relative;
 }
 
 .package:hover,
 .package:active {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
-    border-color: #424242;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-color: #ff5454;
+    /* border-color: #ff5454 !important; */
 }
 
 .package a {
@@ -33,41 +34,54 @@ main {
 
 .package__badge {
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 0;
     margin: 20px;
     font-size: 12px;
-    color: #f5df4d;
-    background: #424242;
+    color: white;
+    background: #ff5454;
     padding: 8px;
 }
 
 .package__subtitle {
-    color: #939597;
+    color: #979797;
 }
 
 .package__info {
-    padding: 12px;
-    border: 1px solid #424242;
+    padding: 16px;
+    border: 1px solid #0e4f1f;
     font-size: 20px;
-    color: #424242;
-    background-color: white;
+    color: #0e4f1f;
+    background: white;
+}
+
+.clearfix {
+    clear: both;
 }
 
 #plus {
-    background-color: #f5df4d;
+    background: rgba(213, 255, 220, 0.95);
 }
 
 #free {
-    background-color: #f5df4dbf;
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: none;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
+}
+
+#free:hover,
+#free:active {
+    border-left-color: #ff5454;
 }
 
 #premium {
-    background-color: #f5df4da2;
+    background: rgba(14, 79, 31, 0.95);
 }
 
 #premium .package__title {
-    color: #424242;
+    color: white;
 }
 
 #premium .package__subtitle {
