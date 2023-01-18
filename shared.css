@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
@@ -12,10 +12,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: aquamarine;
+    background: #2ddf5c;
     padding: 8px 16px;
     z-index: 1;
- }
+}
 
 .main-header > div {
     display: inline-block;
@@ -42,11 +42,9 @@ body {
     list-style: none;
 }
 
-
 .main-nav__item {
     display: inline-block;
     margin: 0 16px;
-    text-decoration: none;
 }
 
 .main-nav__item a {
@@ -57,27 +55,27 @@ body {
 }
 
 .main-nav__item a:hover,
-.main-nav__item a:hover {
+.main-nav__item a:active {
     color: white;
     border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
     color: white;
-    background-color: #59c59c;
+    background: #ff1b68;
     padding: 8px 16px;
     border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
-    color: #59c59c;
+    color: #ff1b68;
     background: white;
     border: none;
 }
 
 .main-footer {
-    background-color: #939597;
+    background: black;
     padding: 32px;
     margin-top: 48px;
 }
@@ -95,14 +93,13 @@ body {
 }
 
 .main-footer__link a {
-    color: #F5DF4D;
+    color: white;
     text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-    color: black;
-
+    color: #ccc;
 }
 
 .button {
@@ -111,16 +108,15 @@ body {
     font: inherit;
     border: 1.5px solid #0e4f1f;
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
 }
 
-button:hover,
+.button:hover,
 .button:active {
-    color: #59c59c;
     background: white;
-    border: none;
+    color: #0e4f1f;
 }
 
 .button:focus {
